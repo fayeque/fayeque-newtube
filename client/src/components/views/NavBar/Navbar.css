@@ -1,0 +1,162 @@
+.navbar__main{
+    width:100vw;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+.navbar{
+    width:80%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    background-color: white;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar__left{
+    display:flex;
+    width:25%;
+    height:100%;
+    align-items:center;
+    padding:0px 10px;
+}
+
+.navbar__left > img {
+    width:60%;
+    height:80%;
+    
+}
+
+.navbar__left > .MuiSvgIcon-root {
+    display: none;
+}
+
+.navbar__middle{
+    display:flex;
+    position:relative;
+    width:30%;
+    height:100%;
+    align-items: center;
+}
+
+.navbar__middle > input {
+    width:100%;
+    height:40%;
+    /* border:none; */
+    border-radius: 50px;
+    padding:0 10px;
+}
+
+.navbar__middle > .MuiSvgIcon-root{
+    position:absolute;
+    right:5%;
+    
+}
+
+.navbar__right{
+    display:flex;
+    width:20%;
+    margin-left:3%;
+    /* justify-content: space-around; */
+}
+
+.navbar__right > a > .MuiSvgIcon-root{
+    font-size:30px;
+    margin-left:10px;
+    color:black;
+    transition: all 0.3s ease;
+}
+
+.navbar__right > a > .MuiSvgIcon-root:hover{
+    color:blue;
+}
+
+@media only screen and (max-width: 800px) {
+.navbar{
+    width:80%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+/* .navbar__right > a > .MuiSvgIcon-root{
+    display: none;
+} */
+
+.navbar{
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.navbar__left{
+    display:flex;
+    width:55%;
+    height:100%;
+    align-items:center;
+    padding:0px 10px;
+}
+
+.navbar__left > .MuiSvgIcon-root {
+    display: block;
+}
+.navbar__middle{
+    display:flex;
+    position:relative;
+    width:45%;
+    height:100%;
+    align-items: center;
+}
+
+.navbar__right{
+    display:none;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:0%;
+}
+.sidebar{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:10%;
+    right:50%;
+    background-color: lightgray;
+    transition: all 0.5s ease-in;
+    z-index:1;
+}
+.sidebar::after{
+    position: fixed;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index:-1;
+}
+.sidebar__links {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:20%;
+    left:70%;
+    color:white;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.sidebar__links > a > .MuiSvgIcon-root {
+    font-size: 40px;
+
+}
+
+}
